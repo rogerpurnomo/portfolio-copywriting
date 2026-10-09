@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Name Case Study | Roger Rusdijanto Purnomo</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-black': '#0a0a0a',
+                        'brand-gray': '#fafafa',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: theme('colors.brand-black');
+            -webkit-font-smoothing: antialiased;
+            /* Hide scrollbar for a cleaner presentation look */
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        body::-webkit-scrollbar {
+            display: none; /* Chrome, Safari and Opera */
+        }
+        .text-balance {
+            text-wrap: balance;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-900 h-screen w-full overflow-hidden">
+
+    <!-- Fixed Back Button -->
+    <a href="index.html" class="fixed top-6 left-6 md:top-10 md:left-10 z-50 flex items-center space-x-2 bg-white/90 backdrop-blur px-4 py-2 rounded-full border border-gray-200 text-sm font-semibold text-brand-black shadow-sm hover:bg-gray-50 hover:scale-105 transition-all duration-200">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        <span>Back to Portfolio</span>
+    </a>
+
+    <!-- Fixed Progress Indicator (Optional visual flair) -->
+    <div class="fixed right-6 md:right-10 top-1/2 -translate-y-1/2 z-50 flex flex-col space-y-3">
+        <div class="w-2 h-2 rounded-full bg-brand-black"></div>
+        <div class="w-2 h-2 rounded-full bg-gray-300"></div>
+        <div class="w-2 h-2 rounded-full bg-gray-300"></div>
+        <div class="w-2 h-2 rounded-full bg-gray-300"></div>
+    </div>
+
+    <!-- Main Scroll Container -->
+    <main class="h-screen w-full overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+        
+        <section class="h-screen w-full snap-start flex flex-col justify-center items-center px-6 bg-brand-gray relative">
+            <div class="max-w-4xl mx-auto text-center">
+                <!-- Placeholder for Logo -->
+                <div class="w-32 h-32 mx-auto mb-8 bg-gray-200 rounded-2xl flex items-center justify-center border border-gray-300">
+                    <span class="text-gray-400 font-semibold text-sm">LOGO</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.05] mb-6 text-brand-black">
+                    [Brand Name]
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-500 font-normal leading-relaxed max-w-2xl mx-auto mb-8">
+                    A brief, one-sentence summary of the project and the overarching goal.
+                </p>
+                <div class="inline-flex space-x-4">
+                    <span class="px-3 py-1 bg-white border border-gray-200 rounded-full text-xs font-semibold uppercase tracking-wider text-gray-600">B2C Marketing</span>
+                    <span class="px-3 py-1 bg-white border border-gray-200 rounded-full text-xs font-semibold uppercase tracking-wider text-gray-600">2024</span>
+                </div>
+            </div>
+            
+            <!-- Scroll prompt -->
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center animate-bounce text-gray-400">
+                <span class="text-xs font-semibold uppercase tracking-widest mb-2">Scroll</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+            </div>
+        </section>
+
+        <section class="h-screen w-full snap-start flex flex-col justify-center px-6 bg-white border-t border-gray-100">
+            <div class="max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-4">01 // The Context</h2>
+                    <h3 class="text-4xl md:text-6xl font-bold tracking-tight mb-6 text-brand-black text-balance">
+                        The Challenge.
+                    </h3>
+                </div>
+                <div class="space-y-6 text-lg md:text-xl text-gray-600 leading-relaxed">
+                    <p>
+                        Describe the initial problem here. For example: The brand was struggling to gain traction in a highly saturated market. They needed a way to cut through the noise and build a loyal audience without spending a fortune on traditional ads.
+                    </p>
+                    <p>
+                        The goal was to leverage organic social media and highly targeted outreach to establish a dominant presence.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="h-screen w-full snap-start flex flex-col justify-center px-6 bg-brand-black text-white">
+            <div class="max-w-5xl mx-auto w-full">
+                <div class="mb-16">
+                    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-4">02 // The Execution</h2>
+                    <h3 class="text-4xl md:text-6xl font-bold tracking-tight text-balance">
+                        The Strategy.
+                    </h3>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="border-t border-gray-800 pt-6">
+                        <div class="text-3xl font-bold mb-4 text-gray-600">1.</div>
+                        <h4 class="text-xl font-bold mb-3">Data Collection</h4>
+                        <p class="text-gray-400 text-sm md:text-base leading-relaxed">Analyzed competitor performance and market trends to identify gaps in the current content landscape.</p>
+                    </div>
+                    <div class="border-t border-gray-800 pt-6">
+                        <div class="text-3xl font-bold mb-4 text-gray-600">2.</div>
+                        <h4 class="text-xl font-bold mb-3">Copy Engineering</h4>
+                        <p class="text-gray-400 text-sm md:text-base leading-relaxed">Drafted highly engaging, data-backed ad scripts tailored specifically for the TikTok algorithm.</p>
+                    </div>
+                    <div class="border-t border-gray-800 pt-6">
+                        <div class="text-3xl font-bold mb-4 text-gray-600">3.</div>
+                        <h4 class="text-xl font-bold mb-3">Iteration</h4>
+                        <p class="text-gray-400 text-sm md:text-base leading-relaxed">Monitored A/B test results and engagement metrics to continuously refine and optimize the messaging.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="h-screen w-full snap-start flex flex-col justify-center px-6 bg-brand-gray border-t border-gray-200 relative">
+            <div class="max-w-5xl mx-auto w-full text-center">
+                <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-8">03 // The Impact</h2>
+                <h3 class="text-5xl md:text-7xl font-bold tracking-tight mb-16 text-brand-black">
+                    The Results.
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="text-5xl font-extrabold text-brand-black mb-2">50K+</div>
+                        <div class="text-gray-500 font-medium">New Followers</div>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="text-5xl font-extrabold text-brand-black mb-2">300%</div>
+                        <div class="text-gray-500 font-medium">Increase in Engagement</div>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 lg:col-span-1 md:col-span-2">
+                        <div class="text-5xl font-extrabold text-brand-black mb-2">2.5M</div>
+                        <div class="text-gray-500 font-medium">Total Impressions</div>
+                    </div>
+                </div>
+                
+                <a href="index.html" class="inline-block bg-brand-black text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-800 transition-colors shadow-lg">
+                    Return to Portfolio
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // Optional script to update the dots on the right side based on scroll position
+        const main = document.querySelector('main');
+        const dots = document.querySelectorAll('.fixed.right-6 div');
+        const sections = document.querySelectorAll('section');
+
+        main.addEventListener('scroll', () => {
+            let index = Math.round(main.scrollTop / window.innerHeight);
+            dots.forEach((dot, i) => {
+                if(i === index) {
+                    dot.classList.remove('bg-gray-300');
+                    dot.classList.add('bg-brand-black');
+                } else {
+                    dot.classList.add('bg-gray-300');
+                    dot.classList.remove('bg-brand-black');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

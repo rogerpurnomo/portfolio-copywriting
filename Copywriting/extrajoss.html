@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra Joss | B2B Outreach Case Study</title>
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Load Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Configure Tailwind theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: { 'brand-black': '#0a0a0a', 'brand-gray': '#fafafa' }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS for snap scrolling and hiding scrollbars -->
+    <style>
+        body, html { 
+            font-family: 'Inter', sans-serif; 
+            margin: 0; 
+            height: 100vh;
+            overflow: hidden; /* Prevent default body scrolling, let main handle it */
+            -webkit-font-smoothing: antialiased;
+            background-color: #0a0a0a;
+        }
+        
+        /* Hide scrollbars for a clean presentation look */
+        .snap-container { 
+            height: 100vh; 
+            overflow-y: scroll; 
+            scroll-snap-type: y mandatory; 
+            scroll-behavior: smooth; 
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        .snap-container::-webkit-scrollbar {
+            display: none; /* Chrome, Safari and Opera */
+        }
+        
+        .snap-section { 
+            height: 100vh; 
+            scroll-snap-align: start; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            position: relative; 
+            padding: 2rem; 
+        }
+        .text-balance { text-wrap: balance; }
+    </style>
+</head>
+<body class="text-white">
+    
+    <!-- Fixed Navigation -->
+    <nav class="fixed top-0 w-full z-50 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+            <span class="text-xs font-bold tracking-widest uppercase text-gray-500" id="nav-brand">Extra Joss</span>
+            <a href="Copywriting.html" id="nav-link" class="flex items-center space-x-2 text-sm font-semibold text-gray-400 hover:text-white transition-colors bg-brand-black/50 backdrop-blur-md px-4 py-2 rounded-full border border-gray-800 shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                <span>Back to Portfolio</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Side Progress Indicators -->
+    <div class="fixed right-6 md:right-10 top-1/2 -translate-y-1/2 z-50 flex flex-col space-y-3">
+        <div class="dot w-2 h-2 rounded-full bg-white transition-colors duration-300"></div>
+        <div class="dot w-2 h-2 rounded-full bg-gray-600 transition-colors duration-300"></div>
+    </div>
+
+    <!-- Main Scroll Container -->
+    <main class="snap-container" id="slide-container">
+        
+        <!-- Slide 1: Dark Mode Hero -->
+        <section class="snap-section bg-brand-black text-white relative">
+            <div class="max-w-4xl mx-auto w-full text-center">
+                <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-6">Strategic B2B Partnership & Credibility Building</h2>
+                
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-8 text-balance">
+                    Extra Joss
+                </h1>
+                
+                <p class="text-lg md:text-xl text-gray-400 font-medium max-w-3xl mx-auto leading-relaxed">
+                    Securing high-impact collaborations through targeted cold outreach.
+                </p>
+            </div>
+            
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce text-gray-600">
+                <span class="text-xs font-semibold uppercase tracking-widest mb-2">Scroll</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Slide 2: Light Mode Content -->
+        <section class="snap-section bg-white text-brand-black border-t border-gray-100">
+            <div class="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4">
+                
+                <!-- Left Side: Text -->
+                <div class="order-2 lg:order-1">
+                    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-4">01 // The Strategy</h2>
+                    <h3 class="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-brand-black text-balance">
+                        Cold Email to Mutual Exposure
+                    </h3>
+                    <div class="space-y-6 text-lg text-gray-600 leading-relaxed font-medium">
+                        <p>
+                            Secured concurrently with the Nando's collaboration, this partnership was born entirely from a highly optimized cold email campaign.
+                        </p>
+                        <p>
+                            The proposal was engineered to be mutually beneficial: providing Extra Joss with direct brand exposure to a highly engaged student demographic, while simultaneously elevating the credibility and scale of the Asia Pacific University Artificial Intelligence Club's major events.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Right Side: Image Placeholder -->
+                <div class="order-1 lg:order-2">
+                    <img src="extrajoss-1.png" alt="Extra Joss Partnership" class="w-full h-auto object-cover rounded-xl shadow-lg border border-gray-200 aspect-video" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    
+                    <!-- Fallback if image doesn't load -->
+                    <div class="hidden flex-col items-center justify-center bg-gray-50 aspect-video rounded-xl border border-gray-200 shadow-lg text-gray-400">
+                        <svg class="w-12 h-12 mb-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                        <span class="text-sm font-medium">Insert extrajoss-1.jpg here</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        const main = document.getElementById('slide-container');
+        const dots = document.querySelectorAll('.dot');
+        const navLink = document.getElementById('nav-link');
+        const navBrand = document.getElementById('nav-brand');
+
+        main.addEventListener('scroll', () => {
+            let index = Math.round(main.scrollTop / window.innerHeight);
+            
+            if(index < 0) index = 0;
+            if(index >= dots.length) index = dots.length - 1;
+
+            // Update dots
+            dots.forEach((dot, i) => {
+                if(i === index) {
+                    if(index === 0) {
+                        dot.classList.remove('bg-gray-600', 'bg-gray-300', 'bg-brand-black');
+                        dot.classList.add('bg-white');
+                    } else {
+                        dot.classList.remove('bg-gray-600', 'bg-white', 'bg-gray-300');
+                        dot.classList.add('bg-brand-black');
+                    }
+                } else {
+                    if(index === 0) {
+                        dot.classList.remove('bg-white', 'bg-brand-black', 'bg-gray-300');
+                        dot.classList.add('bg-gray-600');
+                    } else {
+                        dot.classList.remove('bg-white', 'bg-brand-black', 'bg-gray-600');
+                        dot.classList.add('bg-gray-300');
+                    }
+                }
+            });
+
+            // Update Nav link styling for visibility over white background on Slide 2
+            if (index > 0) {
+                navLink.classList.remove('bg-brand-black/50', 'text-gray-400', 'border-gray-800');
+                navLink.classList.add('bg-white/50', 'text-gray-600', 'border-gray-200');
+                navBrand.classList.remove('text-gray-500');
+                navBrand.classList.add('text-gray-400');
+            } else {
+                navLink.classList.add('bg-brand-black/50', 'text-gray-400', 'border-gray-800');
+                navLink.classList.remove('bg-white/50', 'text-gray-600', 'border-gray-200');
+                navBrand.classList.remove('text-gray-400');
+                navBrand.classList.add('text-gray-500');
+            }
+        });
+    </script>
+</body>
+</html>

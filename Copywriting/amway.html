@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amway Business Network | Roger Rusdijanto Purnomo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], },
+                    colors: { 'brand-black': '#0a0a0a', 'brand-gray': '#fafafa', }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #0a0a0a; }
+        .snap-y-mandatory { scroll-snap-type: y mandatory; overflow-y: scroll; height: 100vh; }
+        .snap-section { scroll-snap-align: start; height: 100vh; display: flex; align-items: center; justify-content: center; padding: 2rem; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 overflow-hidden">
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="Copywriting.html" class="text-sm font-semibold text-gray-500 hover:text-black transition-colors">← Back to Portfolio</a>
+            <span class="font-bold text-sm tracking-widest uppercase text-gray-400">Amway</span>
+        </div>
+    </nav>
+
+    <main class="snap-y-mandatory w-full h-screen relative">
+        <!-- Slide 1: Hero -->
+        <section class="snap-section bg-brand-gray relative">
+            <div class="max-w-4xl mx-auto w-full text-center">
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6">Amway Partnership</h1>
+                <p class="text-xl md:text-2xl text-gray-500 max-w-2xl mx-auto">Scaling a health and wellness business network.</p>
+            </div>
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-gray-400">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+            </div>
+        </section>
+
+        <!-- Slide 2: Types & Objective + Image -->
+        <section class="snap-section bg-white border-t border-gray-100">
+            <div class="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="mb-8">
+                        <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-2">Type</h2>
+                        <p class="text-2xl font-semibold text-brand-black">Business networking and community building for health.</p>
+                    </div>
+                    <div>
+                        <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-2">Objective</h2>
+                        <p class="text-2xl font-semibold text-brand-black">To scale the network by introducing a backup career plan.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 shadow-sm flex items-center justify-center p-4 h-96">
+                    <img src="amway.jpg" alt="Amway Proof" class="max-w-full max-h-full object-cover rounded-xl shadow-sm">
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: Events -->
+        <section class="snap-section bg-brand-gray border-t border-gray-100">
+            <div class="max-w-4xl mx-auto w-full text-center px-4">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-8">Weekly Events & Health Awareness</h2>
+                <p class="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                    I invite people to our weekly events to learn about the importance of a healthy lifestyle. As a student, I see how important it is to build a backup plan early, so these events are a great way to help others start gaining extra income while focusing on their wellbeing.
+                </p>
+            </div>
+        </section>
+
+        <!-- Slide 4: WhatsApp -->
+        <section class="snap-section bg-brand-black text-white">
+            <div class="max-w-4xl mx-auto w-full text-center px-4">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-8">Building the Prospect Community</h2>
+                <p class="text-xl text-gray-400 leading-relaxed max-w-3xl mx-auto">
+                    My main focus is writing WhatsApp blast messages to connect with people across different backgrounds and nationality. I create structural blueprints for these online groups so everyone stays engaged and supported as we grow our health network together as a global business partner.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
